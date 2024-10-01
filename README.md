@@ -28,4 +28,4 @@ Se você também sonha em conquistar sua moto, ou está pensando em fazer um upg
 
 Não deixe seus sonhos em segundo plano. Faça um Clone ou de um Fork no Dreamoto e comece sua jornada rumo à liberdade sobre duas rodas!
 
-[**Clique aqui para começar!**](https://github.com/Leo-Dev-Full-Stack/dreamoto)
+[**Clique aqui para voltar ao início!**](https://github.com/Leo-Dev-Full-Stack/dreamoto)
