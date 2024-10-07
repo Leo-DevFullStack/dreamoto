@@ -5,6 +5,9 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define MAX_MOTOS 100
+#define TAMANHO_STRING 50
+
 typedef struct {
     int id;
     char marca[TAMANHO_STRING];
@@ -14,5 +17,8 @@ typedef struct {
     char cor[TAMANHO_STRING];
     float preco;
 } Moto;
+
+Moto motos[MAX_MOTOS];
+int totalMotos = 0;
 
 #endif
