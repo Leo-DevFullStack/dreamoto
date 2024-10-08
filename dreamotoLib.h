@@ -21,4 +21,8 @@ typedef struct {
 Moto motos[MAX_MOTOS];
 int totalMotos = 0;
 
+void limparTela() {
+    system("cls || clear");
+}
+
 #endif
