@@ -25,4 +25,9 @@ void limparTela() {
     system("cls || clear");
 }
 
+void pausar() {
+    printf("\nPressione Enter para continuar...");
+    getchar();
+}
+
 #endif
