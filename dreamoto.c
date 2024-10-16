@@ -1,6 +1,7 @@
 #include "dreamotoLib.h"
 
 int main() {
+    carregarMotos();
     int opcao;
 
     do {
