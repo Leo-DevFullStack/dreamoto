@@ -35,7 +35,7 @@ void salvarMotos() {
     if (arquivo == NULL) return;
 
     for (int i = 0; i < totalMotos; i++) {
-        fprintf(arquivo, "%d;%s;%s;%s;%d;%s;%.2f\n", motos[i].id, motos[i].marca, motos[i].tipo, motos[i].modelo, motos[i].ano, motos[i].cor, motos[i].preco);
+        fprintf(arquivo, "ID: %d; %s - %s; (%s %d %s); R$%.2f\n", motos[i].id, motos[i].marca, motos[i].tipo, motos[i].modelo, motos[i].ano, motos[i].cor, motos[i].preco);
     }
 
     fclose(arquivo);
@@ -50,6 +50,46 @@ void carregarMotos() {
     }
 
     fclose(arquivo);
+}
+
+void cadastrarMoto() {
+    limparTela();
+    printf("-------- Cadastro Nova Moto --------\n");
+    if (totalMotos >= MAX_MOTOS) return;
+
+    Moto novaMoto;
+    novaMoto.id = totalMotos;
+
+    printf("Digite a marca da moto: ");
+    fgets(novaMoto.marca, TAMANHO_STRING, stdin);
+    novaMoto.marca[strcspn(novaMoto.marca, "\n")] = '\0';
+
+    printf("Digite o tipo da moto: ");
+    fgets(novaMoto.tipo, TAMANHO_STRING, stdin);
+    novaMoto.tipo[strcspn(novaMoto.tipo, "\n")] = '\0';
+
+    printf("Digite o modelo da moto: ");
+    fgets(novaMoto.modelo, TAMANHO_STRING, stdin);
+    novaMoto.modelo[strcspn(novaMoto.modelo, "\n")] = '\0';
+
+    printf("Digite o ano da moto: ");
+    scanf("%d", &novaMoto.ano);
+    getchar();
+
+    printf("Digite a cor da moto: ");
+    fgets(novaMoto.cor, TAMANHO_STRING, stdin);
+    novaMoto.cor[strcspn(novaMoto.cor, "\n")] = '\0';
+
+    printf("Digite o preco da moto: ");
+    scanf("%f", &novaMoto.preco);
+    getchar();
+
+    motos[totalMotos] = novaMoto;
+    totalMotos++;
+
+    salvarMotos();
+    printf("Moto cadastrada com sucesso!\n");
+    pausar();
 }
 
 #endif

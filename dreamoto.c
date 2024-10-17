@@ -20,8 +20,7 @@ int main() {
 
         switch (opcao) {
             case 1:
-                limparTela();
-                printf("-------- Voce esta em Cadastrar Moto --------\n");
+                cadastrarMoto();
                 break;
             case 2:
                 limparTela();
