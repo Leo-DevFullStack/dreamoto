@@ -23,8 +23,7 @@ int main() {
                 cadastrarMoto();
                 break;
             case 2:
-                limparTela();
-                printf("-------- Voce esta em Editar Moto Cadastrada --------\n");
+                editarMoto();
                 break;
             case 3:
                 limparTela();
