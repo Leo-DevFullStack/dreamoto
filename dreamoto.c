@@ -26,8 +26,7 @@ int main() {
                 editarMoto();
                 break;
             case 3:
-                limparTela();
-                printf("-------- Voce esta em Excluir Moto --------\n");
+                excluirMoto();
                 break;
             case 4:
                 limparTela();

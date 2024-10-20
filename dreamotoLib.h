@@ -38,7 +38,7 @@ void salvarMotos() {
     }
 
     for (int i = 0; i < totalMotos; i++) {
-        fprintf(arquivo, "ID: %d;%s;%s;%s;%d;%s;%.2f\n", motos[i].id, motos[i].marca, motos[i].tipo, motos[i].modelo, motos[i].ano, motos[i].cor, motos[i].preco);
+        fprintf(arquivo, "%d;%s;%s;%s;%d;%s;%.2f\n", motos[i].id, motos[i].marca, motos[i].tipo, motos[i].modelo, motos[i].ano, motos[i].cor, motos[i].preco);
     }
 
     fclose(arquivo);
@@ -196,6 +196,44 @@ void editarMoto() {
 
     salvarMotos();
     printf("Moto editada com sucesso!\n");
+    pausar();
+}
+
+void excluirMoto() {
+    limparTela();
+    printf("-------- Excluir Moto --------\n");
+    if (totalMotos == 0) {
+        printf("Nenhuma moto cadastrada.\n");
+        pausar();
+        return;
+    }
+
+    int id;
+    printf("Digite o ID da moto que deseja excluir: ");
+    scanf("%d", &id);
+    getchar();
+
+    int indice = -1;
+    for (int i = 0; i < totalMotos; i++) {
+        if (motos[i].id == id) {
+            indice = i;
+            break;
+        }
+    }
+
+    if (indice == -1) {
+        printf("ID nao encontrado.\n");
+        pausar();
+        return;
+    }
+
+    for (int i = indice; i < totalMotos - 1; i++) {
+        motos[i] = motos[i + 1];
+    }
+    totalMotos--;
+
+    salvarMotos();
+    printf("Moto excluida com sucesso!\n");
     pausar();
 }
 
