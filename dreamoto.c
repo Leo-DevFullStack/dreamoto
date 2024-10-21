@@ -29,8 +29,7 @@ int main() {
                 excluirMoto();
                 break;
             case 4:
-                limparTela();
-                printf("-------- Voce esta em Ver Moto Cadastrada --------\n");
+                verMoto();
                 break;
             case 5:
                 limparTela();

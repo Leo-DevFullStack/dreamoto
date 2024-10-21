@@ -237,4 +237,35 @@ void excluirMoto() {
     pausar();
 }
 
+void verMoto() {
+    limparTela();
+    printf("-------- Visualizar Moto --------\n");
+    if (totalMotos == 0) {
+        printf("Nenhuma moto cadastrada.\n");
+        pausar();
+        return;
+    }
+
+    int id;
+    printf("Digite o ID da moto que deseja visualizar: ");
+    scanf("%d", &id);
+    getchar();
+
+    int encontrada = 0;
+    for (int i = 0; i < totalMotos; i++) {
+        if (motos[i].id == id) {
+            Moto moto = motos[i];
+            printf("ID: %d | Marca: %s | Tipo: %s | Modelo: %s | Ano: %d | Cor: %s | Preco: %.2f\n", moto.id, moto.marca, moto.tipo, moto.modelo, moto.ano, moto.cor, moto.preco);
+            encontrada = 1;
+            break;
+        }
+    }
+
+    if (!encontrada) {
+        printf("Nenhuma moto encontrada com o ID informado.\n");
+    }
+
+    pausar();
+}
+
 #endif
