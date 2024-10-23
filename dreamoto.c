@@ -12,8 +12,8 @@ int main() {
         printf("4 - Ver Moto Cadastrada\n");
         printf("5 - Listar Todas Motos\n");
         printf("6 - Excluir Todas Motos\n");
-        printf("7 - Add Favoritas\n");
-        printf("8 - Ver Favoritas\n");
+        printf("7 - Planejar compra\n");
+        printf("8 - Visualizar planos\n");
         printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
         getchar();
@@ -40,11 +40,11 @@ int main() {
                 break;
             case 7:
                 limparTela();
-                printf("-------- Voce esta em Add Favoritas --------\n");
+                printf("-------- Voce esta em Planejar compra --------\n");
                 break;
             case 8:
                 limparTela();
-                printf("-------- Voce esta em Ver Favoritas --------\n");
+                printf("-------- Voce esta em Visualizar planos --------\n");
                 break;
             case 0:
                 printf("Saindo do programa...\n");
