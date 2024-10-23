@@ -32,8 +32,7 @@ int main() {
                 verMoto();
                 break;
             case 5:
-                limparTela();
-                printf("-------- Voce esta em Listar Todas Motos --------\n");
+                listarMotos();             
                 break;
             case 6:
                 limparTela();
