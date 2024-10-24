@@ -39,8 +39,7 @@ int main() {
                 printf("-------- Voce esta em Excluir Todas Motos --------\n");
                 break;
             case 7:
-                limparTela();
-                printf("-------- Voce esta em Planejar compra --------\n");
+                planejarCompra();
                 break;
             case 8:
                 limparTela();

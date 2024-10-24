@@ -283,4 +283,52 @@ void listarMotos() {
     pausar();
 }
 
+void planejarCompra() {
+    limparTela();
+    printf("-------- Voce esta em Planejar compra --------\n");
+    if (totalMotos == 0) {
+        printf("Nenhuma moto cadastrada.\n");
+        pausar();
+        return;
+    }
+
+    int id;
+    printf("Escolha uma moto digitando o ID referente a mesma, ou volte ao menu e veja os IDs na opcao 5: ");
+    scanf("%d", &id);
+    getchar();
+
+    // Verifica se o ID informado existe
+    Moto *motoEscolhida = NULL;
+    for (int i = 0; i < totalMotos; i++) {
+        if (motos[i].id == id) { // Supondo que a struct Moto tem um campo 'id'
+            motoEscolhida = &motos[i];
+            break;
+        }
+    }
+
+    if (motoEscolhida == NULL) {
+        printf("ID invalido.\n");
+        pausar();
+        return;
+    }
+
+    printf("Moto escolhida: %s %s %s, Ano: %d, Cor: %s, Preco: %.2f\n", motoEscolhida->marca, motoEscolhida->tipo, motoEscolhida->modelo, motoEscolhida->ano, motoEscolhida->cor, motoEscolhida->preco);
+
+    float economiaMensal;
+    printf("Digite o valor que voce pode guardar por mes: ");
+    scanf("%f", &economiaMensal);
+    getchar();
+
+    int meses = (int)(motoEscolhida->preco / economiaMensal);
+    printf("Voce deve guardar %.2f por %d meses para comprar a %s %s %s\n", economiaMensal, meses, motoEscolhida->marca, motoEscolhida->tipo, motoEscolhida->modelo);
+
+    FILE *arquivoFavoritas = fopen("favoritas.txt", "a");
+    if (arquivoFavoritas == NULL) return;
+
+    fprintf(arquivoFavoritas, "Moto: %s %s %s | Economia Mensal: %.2f | Meses: %d\n", motoEscolhida->marca, motoEscolhida->tipo, motoEscolhida->modelo, economiaMensal, meses);
+    fclose(arquivoFavoritas);
+
+    pausar();
+}
+
 #endif
