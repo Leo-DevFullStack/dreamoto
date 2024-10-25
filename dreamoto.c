@@ -42,8 +42,7 @@ int main() {
                 planejarCompra();
                 break;
             case 8:
-                limparTela();
-                printf("-------- Voce esta em Visualizar planos --------\n");
+                visualizarPlanos();
                 break;
             case 0:
                 printf("Saindo do programa...\n");

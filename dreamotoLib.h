@@ -331,4 +331,23 @@ void planejarCompra() {
     pausar();
 }
 
+void visualizarPlanos() {
+    limparTela();
+    printf("-------- Voce esta Visualizando seus ultimos planos de compra --------\n");
+    FILE *arquivoFavoritas = fopen("favoritas.txt", "r");
+    if (arquivoFavoritas == NULL) {
+        printf("Nenhuma compra planejada foi registrada.\n");
+        pausar();
+        return;
+    }
+
+    char linha[200];
+    while (fgets(linha, sizeof(linha), arquivoFavoritas)) {
+        printf("%s", linha);
+    }
+
+    fclose(arquivoFavoritas);
+    pausar();
+}
+
 #endif
