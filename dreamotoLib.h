@@ -322,11 +322,11 @@ void planejarCompra() {
     int meses = (int)(motoEscolhida->preco / economiaMensal);
     printf("Voce deve guardar %.2f por %d meses para comprar a %s %s %s\n", economiaMensal, meses, motoEscolhida->marca, motoEscolhida->tipo, motoEscolhida->modelo);
 
-    FILE *arquivoFavoritas = fopen("favoritas.txt", "a");
-    if (arquivoFavoritas == NULL) return;
+    FILE *arquivoPlanos = fopen("planos.txt", "a");
+    if (arquivoPlanos == NULL) return;
 
-    fprintf(arquivoFavoritas, "Moto: %s %s %s | Economia Mensal: %.2f | Meses: %d\n", motoEscolhida->marca, motoEscolhida->tipo, motoEscolhida->modelo, economiaMensal, meses);
-    fclose(arquivoFavoritas);
+    fprintf(arquivoPlanos, "Moto: %s %s %s | Economia Mensal: %.2f | Meses: %d\n", motoEscolhida->marca, motoEscolhida->tipo, motoEscolhida->modelo, economiaMensal, meses);
+    fclose(arquivoPlanos);
 
     pausar();
 }
@@ -334,19 +334,19 @@ void planejarCompra() {
 void visualizarPlanos() {
     limparTela();
     printf("-------- Voce esta Visualizando seus ultimos planos de compra --------\n");
-    FILE *arquivoFavoritas = fopen("favoritas.txt", "r");
-    if (arquivoFavoritas == NULL) {
+    FILE *arquivoPlanos = fopen("planos.txt", "r");
+    if (arquivoPlanos == NULL) {
         printf("Nenhuma compra planejada foi registrada.\n");
         pausar();
         return;
     }
 
     char linha[200];
-    while (fgets(linha, sizeof(linha), arquivoFavoritas)) {
+    while (fgets(linha, sizeof(linha), arquivoPlanos)) {
         printf("%s", linha);
     }
 
-    fclose(arquivoFavoritas);
+    fclose(arquivoPlanos);
     pausar();
 }
 
