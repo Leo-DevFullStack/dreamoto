@@ -35,8 +35,7 @@ int main() {
                 listarMotos();             
                 break;
             case 6:
-                limparTela();
-                printf("-------- Voce esta em Excluir Todas Motos --------\n");
+                excluirTodasMotos();
                 break;
             case 7:
                 planejarCompra();

@@ -270,7 +270,7 @@ void verMoto() {
 
 void listarMotos() {
     limparTela();
-    printf("-------- Voce esta em Listar Todas Motos --------\n");
+    printf("-------- Listar Todas Motos --------\n");
     if (totalMotos == 0) {
         printf("Nenhuma moto cadastrada.\n");
         pausar();
@@ -283,9 +283,52 @@ void listarMotos() {
     pausar();
 }
 
+void excluirTodasMotos() {
+    limparTela();
+    printf("-------- Excluir Todas Motos --------\n");
+
+    int opcao;
+    printf("Escolha uma opcao:\n");
+    printf("0 - Voltar ao menu inicial\n");
+    printf("1 - Excluir todas as motos cadastradas\n");
+    printf("2 - Excluir todos planejamentos cadastrados\n");
+    printf("3 - Excluir todos os dados de ambos os arquivos\n");
+    scanf("%d", &opcao);
+    getchar();
+
+    switch (opcao) {
+        case 0:
+            printf("\n-------- DREAMOTO / MENU PRINCIPAL --------\n");
+            return;
+        case 1:
+            totalMotos = 0;
+            salvarMotos();
+            printf("Todas as motos cadastradas foram excluidas.\n");
+            break;
+        case 2: {
+            FILE *arquivoPlanos = fopen("planos.txt", "w");
+            if (arquivoPlanos != NULL) fclose(arquivoPlanos);
+            printf("Todos planejamentos foram excluidos.\n");
+            break;
+        }
+        case 3:
+            totalMotos = 0;
+            salvarMotos();
+            FILE *arquivoPlanos = fopen("planos.txt", "w");
+            if (arquivoPlanos != NULL) fclose(arquivoPlanos);
+            printf("Todos os dados de ambos os arquivos foram excluidos.\n");
+            break;
+        default:
+            printf("Opcao invalida.\n");
+            break;
+    }
+
+    pausar();
+}
+
 void planejarCompra() {
     limparTela();
-    printf("-------- Voce esta em Planejar compra --------\n");
+    printf("-------- Planejar compra --------\n");
     if (totalMotos == 0) {
         printf("Nenhuma moto cadastrada.\n");
         pausar();
@@ -297,10 +340,9 @@ void planejarCompra() {
     scanf("%d", &id);
     getchar();
 
-    // Verifica se o ID informado existe
     Moto *motoEscolhida = NULL;
     for (int i = 0; i < totalMotos; i++) {
-        if (motos[i].id == id) { // Supondo que a struct Moto tem um campo 'id'
+        if (motos[i].id == id) {
             motoEscolhida = &motos[i];
             break;
         }
