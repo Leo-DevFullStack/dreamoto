@@ -202,6 +202,7 @@ void editarMoto() {
 void excluirMoto() {
     limparTela();
     printf("-------- Excluir Moto --------\n");
+
     if (totalMotos == 0) {
         printf("Nenhuma moto cadastrada.\n");
         pausar();
@@ -240,6 +241,7 @@ void excluirMoto() {
 void verMoto() {
     limparTela();
     printf("-------- Visualizar Moto --------\n");
+
     if (totalMotos == 0) {
         printf("Nenhuma moto cadastrada.\n");
         pausar();
@@ -271,6 +273,7 @@ void verMoto() {
 void listarMotos() {
     limparTela();
     printf("-------- Listar Todas Motos --------\n");
+
     if (totalMotos == 0) {
         printf("Nenhuma moto cadastrada.\n");
         pausar();
@@ -286,6 +289,12 @@ void listarMotos() {
 void excluirTodasMotos() {
     limparTela();
     printf("-------- Excluir Todas Motos --------\n");
+
+    if (totalMotos == 0) {
+        printf("Nenhuma moto cadastrada.\n");
+        pausar();
+        return;
+    }
 
     int opcao;
     printf("Escolha uma opcao:\n");
@@ -329,6 +338,7 @@ void excluirTodasMotos() {
 void planejarCompra() {
     limparTela();
     printf("-------- Planejar compra --------\n");
+
     if (totalMotos == 0) {
         printf("Nenhuma moto cadastrada.\n");
         pausar();
@@ -376,6 +386,13 @@ void planejarCompra() {
 void visualizarPlanos() {
     limparTela();
     printf("-------- Voce esta Visualizando seus ultimos planos de compra --------\n");
+
+    if (totalMotos == 0) {
+        printf("Nenhuma moto cadastrada.\n");
+        pausar();
+        return;
+    }
+
     FILE *arquivoPlanos = fopen("planos.txt", "r");
     if (arquivoPlanos == NULL) {
         printf("Nenhuma compra planejada foi registrada.\n");
