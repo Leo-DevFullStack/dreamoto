@@ -281,7 +281,7 @@ void listarMotos() {
     }
 
     for (int i = 0; i < totalMotos; i++) {
-        printf("ID: %d | Marca: %s | Tipo: %s | Modelo: %s | Ano: %d | Cor: %s | Preco: %.2f\n", motos[i].id, motos[i].marca, motos[i].tipo, motos[i].modelo, motos[i].ano, motos[i].cor, motos[i].preco);
+        printf("ID: %d | %s | %s | %s | %d | %s | R$%.2f\n", motos[i].id, motos[i].marca, motos[i].tipo, motos[i].modelo, motos[i].ano, motos[i].cor, motos[i].preco);
     }
     pausar();
 }
