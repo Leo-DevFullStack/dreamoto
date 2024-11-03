@@ -1,4 +1,6 @@
-![dreamotoLogo jpg](https://github.com/user-attachments/assets/9b24658c-a5b5-4595-aa1a-32eecf529573)
+<p align="center">
+    <img src="/dreamotoLogo.jpg" alt="logo" width="300"/>
+</p>
 
 # Dreamoto
 
