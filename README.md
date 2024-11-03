@@ -1,3 +1,5 @@
+![dreamotoLogo jpg](https://github.com/user-attachments/assets/9b24658c-a5b5-4595-aa1a-32eecf529573)
+
 # Dreamoto
 
 **Uma fusão dos sonhos e motos!**
