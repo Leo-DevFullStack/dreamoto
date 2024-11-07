@@ -5,8 +5,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_MOTOS 100
-#define TAMANHO_STRING 50
+#define MAX_MOTOS 500
+#define TAMANHO_STRING 200
 
 typedef struct {
     int id;
@@ -52,7 +52,7 @@ void carregarMotos() {
     }
 
     totalMotos = 0;
-    while (fscanf(arquivo, "%d;%49[^;];%49[^;];%49[^;];%d;%49[^;];%f\n", &motos[totalMotos].id, motos[totalMotos].marca, motos[totalMotos].tipo, motos[totalMotos].modelo, &motos[totalMotos].ano, motos[totalMotos].cor, &motos[totalMotos].preco) != EOF) {
+    while (fscanf(arquivo, "%d;%499[^;];%4999[^;];%499[^;];%d;%499[^;];%f\n", &motos[totalMotos].id, motos[totalMotos].marca, motos[totalMotos].tipo, motos[totalMotos].modelo, &motos[totalMotos].ano, motos[totalMotos].cor, &motos[totalMotos].preco) != EOF) {
         totalMotos++;
     }
 
@@ -377,7 +377,7 @@ void planejarCompra() {
     FILE *arquivoPlanos = fopen("planos.txt", "a");
     if (arquivoPlanos == NULL) return;
 
-    fprintf(arquivoPlanos, "Moto: %s %s %s | Economia Mensal: %.2f | Meses: %d\n", motoEscolhida->marca, motoEscolhida->tipo, motoEscolhida->modelo, economiaMensal, meses);
+    fprintf(arquivoPlanos, "Moto: %s %s %s | Economia Mensal: %.2f | Qntd. de Meses: %d\n", motoEscolhida->marca, motoEscolhida->tipo, motoEscolhida->modelo, economiaMensal, meses);
     fclose(arquivoPlanos);
 
     pausar();
