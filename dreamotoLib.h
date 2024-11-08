@@ -409,4 +409,48 @@ void visualizarPlanos() {
     pausar();
 }
 
+void planejarCompraTodasMotos() {
+    limparTela();
+    printf("-------- Planejar compra para todas as motos --------\n");
+
+    if (totalMotos == 0) {
+        printf("Nenhuma moto cadastrada.\n");
+        pausar();
+        return;
+    }
+
+    int meses;
+    printf("Digite o numero de meses para planejar (valor inteiro): ");
+    scanf("%d", &meses);
+    getchar();
+
+    if (meses <= 0) {
+        printf("Numero de meses deve ser maior que zero.\n");
+        pausar();
+        return;
+    }
+
+    FILE *arquivoPlanos = fopen("planos.txt", "a");
+    if (arquivoPlanos == NULL) {
+        printf("Erro ao abrir o arquivo de planos.\n");
+        pausar();
+        return;
+    }
+
+    for (int i = 0; i < totalMotos; i++) {
+        Moto *motoEscolhida = &motos[i];
+        float economiaMensal = motoEscolhida->preco / meses;
+
+        fprintf(arquivoPlanos, "Moto: %s %s %s | Economia Mensal: %.2f | Qntd. de Meses: %d\n",
+                motoEscolhida->marca, motoEscolhida->tipo, motoEscolhida->modelo, economiaMensal, meses);
+
+        printf("Moto: %s %s %s | Economia Mensal: %.2f | Qntd. de Meses: %d\n",
+               motoEscolhida->marca, motoEscolhida->tipo, motoEscolhida->modelo, economiaMensal, meses);
+    }
+
+    fclose(arquivoPlanos);
+    printf("Planos gerados e salvos com sucesso!\n");
+    pausar();
+}
+
 #endif
