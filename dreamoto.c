@@ -37,9 +37,36 @@ int main() {
             case 6:
                 excluirTodasMotos();
                 break;
-            case 7:
-                planejarCompra();
+            case 7: {
+                int subOpcao;
+                do {
+                    limparTela();
+                    printf("-------- Planejar Compra --------\n");
+                    printf("0 - Voltar ao menu anterior\n");
+                    printf("1 - Planos para uma moto pelo ID\n");
+                    printf("2 - Gerar plano para todas motos em \"X\" meses\n");
+                    printf("Escolha uma opcao: ");
+                    scanf("%d", &subOpcao);
+                    getchar();
+
+                    switch (subOpcao) {
+                        case 0:
+                            printf("Voltando ao menu principal...\n");
+                            break;
+                        case 1:
+                            planejarCompra();
+                            break;
+                        case 2:
+                            planejarCompraTodasMotos();
+                            break;
+                        default:
+                            printf("Opcao invalida.\n");
+                            pausar();
+                            break;
+                    }
+                } while (subOpcao != 0);
                 break;
+            }
             case 8:
                 visualizarPlanos();
                 break;
