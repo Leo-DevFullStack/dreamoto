@@ -354,3 +354,92 @@ Moto: YAMAHA SCOOTER XMAX ABS CONNECTED | Economia Mensal: 758.67 | Qntd. de Mes
 Moto: YAMAHA SCOOTER NMAX ABS CONNECTED | Economia Mensal: 478.85 | Qntd. de Meses: 48
 Moto: YAMAHA SCOOTER FLUO ABS | Economia Mensal: 337.60 | Qntd. de Meses: 48
 Moto: YAMAHA SCOOTER NEO 125 UBS | Economia Mensal: 291.60 | Qntd. de Meses: 48
+Moto: TRIUMPH ADVENTURE TIGER 900 GT ARAGON EDITION | Economia Mensal: 1261.50 | Qntd. de Meses: 60
+Moto: TRIUMPH ADVENTURE TIGER 900 GT PRO | Economia Mensal: 1291.50 | Qntd. de Meses: 60
+Moto: TRIUMPH ADVENTURE TIGER 1200 BLACK EDITION | Economia Mensal: 1483.17 | Qntd. de Meses: 60
+Moto: TRIUMPH ADVENTURE TIGER 1200 RALLY EXPLORER | Economia Mensal: 2041.50 | Qntd. de Meses: 60
+Moto: TRIUMPH ADVENTURE TIGER 1200 GT RALLY EXPLORER | Economia Mensal: 1924.83 | Qntd. de Meses: 60
+Moto: TRIUMPH ROADSTERS STREET TRIPLE 765 RS | Economia Mensal: 1174.83 | Qntd. de Meses: 60
+Moto: TRIUMPH ROADSTERS STREET TRIPLE 765 RS | Economia Mensal: 1174.83 | Qntd. de Meses: 60
+Moto: TRIUMPH ROADSTERS TRIDENT 660 | Economia Mensal: 841.50 | Qntd. de Meses: 60
+Moto: TRIUMPH ROADSTERS TRIDENT 660 | Economia Mensal: 841.50 | Qntd. de Meses: 60
+Moto: TRIUMPH ADVENTURE TIGER SPORT 660 | Economia Mensal: 949.83 | Qntd. de Meses: 60
+Moto: TRIUMPH ADVENTURE TIGER SPORT 660 | Economia Mensal: 958.17 | Qntd. de Meses: 60
+Moto: TRIUMPH SPORT DAYTONA 660 | Economia Mensal: 941.50 | Qntd. de Meses: 60
+Moto: TRIUMPH MODERN CLASSICS SPEED TWIN 1200 STEALTH EDITION | Economia Mensal: 1171.50 | Qntd. de Meses: 60
+Moto: TRIUMPH MODERN CLASSICS SPEED 400 | Economia Mensal: 499.83 | Qntd. de Meses: 60
+Moto: TRIUMPH MODERN CLASSICS SPEED 400 | Economia Mensal: 499.83 | Qntd. de Meses: 60
+Moto: TRIUMPH MODERN CLASSICS SPEED 400 | Economia Mensal: 499.83 | Qntd. de Meses: 60
+Moto: TRIUMPH MODERN CLASSICS SCRAMBLER 400 X | Economia Mensal: 566.50 | Qntd. de Meses: 60
+Moto: TRIUMPH MODERN CLASSICS BONNEVILLE BOBBER | Economia Mensal: 1119.83 | Qntd. de Meses: 60
+Moto: TRIUMPH ROCKET 3 ROCKET 3 STORM GT | Economia Mensal: 2216.50 | Qntd. de Meses: 60
+Moto: KTM NAKED BIKE KTM 390 DUKE | Economia Mensal: 599.83 | Qntd. de Meses: 60
+Moto: BMW TOUR K 1600 GTL | Economia Mensal: 5331.67 | Qntd. de Meses: 60
+Moto: BMW SPORT S 1000 RR | Economia Mensal: 2198.33 | Qntd. de Meses: 60
+Moto: BMW SPORT S 1000 RR | Economia Mensal: 2198.33 | Qntd. de Meses: 60
+Moto: BMW TOUR R 1250 RT | Economia Mensal: 3415.00 | Qntd. de Meses: 60
+Moto: BMW TOUR R 1250 RT | Economia Mensal: 3415.00 | Qntd. de Meses: 60
+Moto: BMW ROADSTER F 900 R | Economia Mensal: 1098.33 | Qntd. de Meses: 60
+Moto: BMW ROADSTER F 310 R | Economia Mensal: 598.33 | Qntd. de Meses: 60
+Moto: BMW ADVENTURE R 1250 GS ADVENTURE | Economia Mensal: 2150.00 | Qntd. de Meses: 60
+Moto: BMW ADVENTURE R 1250 GS ADVENTURE | Economia Mensal: 2150.00 | Qntd. de Meses: 60
+Moto: BMW ADVENTURE F 900 GS ADVENTURE | Economia Mensal: 1441.67 | Qntd. de Meses: 60
+Moto: BMW ADVENTURE F 800 GS | Economia Mensal: 1115.00 | Qntd. de Meses: 60
+Moto: BMW ADVENTURE G 310 GS | Economia Mensal: 648.33 | Qntd. de Meses: 60
+Moto: BMW ADVENTURE G 310 GS | Economia Mensal: 648.33 | Qntd. de Meses: 60
+Moto: BMW URBAN MOBILITY C 400 X | Economia Mensal: 1015.00 | Qntd. de Meses: 60
+Moto: BMW ADVENTURE G 310 GS | Economia Mensal: 648.33 | Qntd. de Meses: 60
+Moto: SUZUKI SUPER SPORT GSX-R1000R | Economia Mensal: 1828.33 | Qntd. de Meses: 60
+Moto: SUZUKI SPORT TOURING HAYABUSA | Economia Mensal: 2075.00 | Qntd. de Meses: 60
+Moto: SUZUKI SPORT TOURING HAYABUSA | Economia Mensal: 2075.00 | Qntd. de Meses: 60
+Moto: SUZUKI SPORT TOURING HAYABUSA | Economia Mensal: 2075.00 | Qntd. de Meses: 60
+Moto: SUZUKI GRAND TOURER GSX-1000 GT | Economia Mensal: 1543.33 | Qntd. de Meses: 60
+Moto: SUZUKI GRAND TOURER GSX-1000 GT | Economia Mensal: 1543.33 | Qntd. de Meses: 60
+Moto: SUZUKI GRAND TOURER GSX-1000 GT | Economia Mensal: 1543.33 | Qntd. de Meses: 60
+Moto: SUZUKI BIG TRAIL V-STROM 1050XT | Economia Mensal: 1449.17 | Qntd. de Meses: 60
+Moto: SUZUKI BIG TRAIL V-STROM 800 DE | Economia Mensal: 1125.00 | Qntd. de Meses: 60
+Moto: SUZUKI BIG TRAIL V-STROM 650XT | Economia Mensal: 965.00 | Qntd. de Meses: 60
+Moto: SUZUKI NAKED GSX-8S | Economia Mensal: 858.33 | Qntd. de Meses: 60
+Moto: SUZUKI NAKED GSX-8S | Economia Mensal: 858.33 | Qntd. de Meses: 60
+Moto: KAWASAKI PISTA NINJA ZX-10R KRT EDITION | Economia Mensal: 2003.17 | Qntd. de Meses: 60
+Moto: KAWASAKI PISTA NINJA ZX-6R KRT EDITION | Economia Mensal: 1286.50 | Qntd. de Meses: 60
+Moto: KAWASAKI PISTA NINJA ZX-4R | Economia Mensal: 958.17 | Qntd. de Meses: 60
+Moto: KAWASAKI PISTA NINJA 650 | Economia Mensal: 842.17 | Qntd. de Meses: 60
+Moto: KAWASAKI PISTA NINJA 500 SE KRT EDITION | Economia Mensal: 718.50 | Qntd. de Meses: 60
+Moto: KAWASAKI PISTA NINJA 300 | Economia Mensal: 498.33 | Qntd. de Meses: 60
+Moto: KAWASAKI AVENTURA Z1000 | Economia Mensal: 1319.83 | Qntd. de Meses: 60
+Moto: KAWASAKI AVENTURA Z900 | Economia Mensal: 1052.33 | Qntd. de Meses: 60
+Moto: KAWASAKI AVENTURA Z650 | Economia Mensal: 808.83 | Qntd. de Meses: 60
+Moto: KAWASAKI AVENTURA Z500 | Economia Mensal: 641.83 | Qntd. de Meses: 60
+Moto: KAWASAKI AVENTURA VERSYS 650 | Economia Mensal: 902.33 | Qntd. de Meses: 60
+Moto: KAWASAKI AVENTURA VERSYS-X 300 TR | Economia Mensal: 655.17 | Qntd. de Meses: 60
+Moto: HONDA TOURING GL 1800 GOLD WING TOUR | Economia Mensal: 5074.17 | Qntd. de Meses: 60
+Moto: HONDA BIG TRAIL CRF 1100L AFRICA TWIN ADVENTURE SPORTS | Economia Mensal: 1702.17 | Qntd. de Meses: 60
+Moto: HONDA BIG TRAIL CRF 1100L AFRICA TWIN | Economia Mensal: 1702.17 | Qntd. de Meses: 60
+Moto: HONDA SPORT CBR 1000RR-R FIREBLADE SP | Economia Mensal: 3225.00 | Qntd. de Meses: 60
+Moto: HONDA SPORT CBR 650R | Economia Mensal: 922.67 | Qntd. de Meses: 60
+Moto: HONDA ADVENTURE NC 750X | Economia Mensal: 878.00 | Qntd. de Meses: 60
+Moto: HONDA ADVENTURE XR 300L TORNADO | Economia Mensal: 461.50 | Qntd. de Meses: 60
+Moto: HONDA SCOOTER X-ADV | Economia Mensal: 1558.33 | Qntd. de Meses: 60
+Moto: HONDA SCOOTER ADV | Economia Mensal: 384.33 | Qntd. de Meses: 60
+Moto: HONDA SCOOTER PCX | Economia Mensal: 329.55 | Qntd. de Meses: 60
+Moto: HONDA STREET CB 650F | Economia Mensal: 677.67 | Qntd. de Meses: 60
+Moto: HONDA STREET CB 300F TWISTER ABS | Economia Mensal: 409.67 | Qntd. de Meses: 60
+Moto: HONDA STREET NXR 160 BROS ABS | Economia Mensal: 356.50 | Qntd. de Meses: 60
+Moto: HONDA STREET CG 160 TITAN ABS | Economia Mensal: 320.50 | Qntd. de Meses: 60
+Moto: YAMAHA SPORT TOURING TRACER 900 GT ABS | Economia Mensal: 1195.58 | Qntd. de Meses: 60
+Moto: YAMAHA MT-SERIES MT-09 ABS | Economia Mensal: 1080.18 | Qntd. de Meses: 60
+Moto: YAMAHA MT-SERIES MT-07 ABS | Economia Mensal: 851.08 | Qntd. de Meses: 60
+Moto: YAMAHA MT-SERIES MT-03 ABS | Economia Mensal: 568.72 | Qntd. de Meses: 60
+Moto: YAMAHA ESPORTIVA R3 ABS | Economia Mensal: 583.77 | Qntd. de Meses: 60
+Moto: YAMAHA ESPORTIVA R3 ABS | Economia Mensal: 593.80 | Qntd. de Meses: 60
+Moto: YAMAHA ESPORTIVA R15 ABS | Economia Mensal: 378.78 | Qntd. de Meses: 60
+Moto: YAMAHA TRAIL LANDER CONNECTED | Economia Mensal: 481.32 | Qntd. de Meses: 60
+Moto: YAMAHA TRAIL CROSSER S ABS | Economia Mensal: 372.70 | Qntd. de Meses: 60
+Moto: YAMAHA STREET FAZER FZ25 CONNECTED | Economia Mensal: 416.08 | Qntd. de Meses: 60
+Moto: YAMAHA STREET FAZER FZ15 ABS CONNECTED | Economia Mensal: 363.67 | Qntd. de Meses: 60
+Moto: YAMAHA STREET FACTOR DX | Economia Mensal: 316.50 | Qntd. de Meses: 60
+Moto: YAMAHA SCOOTER XMAX ABS CONNECTED | Economia Mensal: 606.93 | Qntd. de Meses: 60
+Moto: YAMAHA SCOOTER NMAX ABS CONNECTED | Economia Mensal: 383.08 | Qntd. de Meses: 60
+Moto: YAMAHA SCOOTER FLUO ABS | Economia Mensal: 270.08 | Qntd. de Meses: 60
+Moto: YAMAHA SCOOTER NEO 125 UBS | Economia Mensal: 233.28 | Qntd. de Meses: 60
