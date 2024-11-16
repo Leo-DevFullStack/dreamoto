@@ -1,0 +1,110 @@
+1<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DREAMOTO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #ff5733;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        form {
+            display: grid;
+            gap: 1rem;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, button {
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+        button {
+            background: #ff5733;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #e04e2a;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.8rem;
+            text-align: left;
+        }
+        th {
+            background: #ff5733;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <header>DREAMOTO - Planejamento de Motos</header>
+    <div class="container">
+        <h2>Cadastrar Moto</h2>
+        <form id="formMoto">
+            <label>ID</label>
+            <input type="number" id="id" required>
+            <label>Marca</label>
+            <input type="text" id="marca" required>
+            <label>Tipo</label>
+            <input type="text" id="tipo" required>
+            <label>Modelo</label>
+            <input type="text" id="modelo" required>
+            <label>Ano</label>
+            <input type="number" id="ano" required>
+            <label>Cor</label>
+            <input type="text" id="cor" required>
+            <label>Preço</label>
+            <input type="number" step="0.01" id="preco" required>
+            <button type="submit">Salvar Moto</button>
+        </form>
+
+        <h2>Lista de Motos</h2>
+        <table id="tabelaMotos">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Marca</th>
+                    <th>Tipo</th>
+                    <th>Modelo</th>
+                    <th>Ano</th>
+                    <th>Cor</th>
+                    <th>Preço</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dados gerados dinamicamente -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

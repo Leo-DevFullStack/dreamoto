@@ -1,4 +1,4 @@
--------------------------PLANOS DE COMPARA PARA TODAS MOTOS CADASTRADAS EM 1 AN0 (12 MESES)-------------------------
+------------------------------PLANOS DE COMPARA PARA TODAS MOTOS CADASTRADAS EM 1 AN0 (12 MESES)------------------------------
 
 
 
@@ -97,8 +97,8 @@ Moto: YAMAHA SCOOTER NEO 125 UBS | Economia Mensal: 1166.42 | Qntd. de Meses: 12
 
 
 
-
--------------------------PLANOS DE COMPARA PARA TODAS MOTOS CADASTRADAS EM 2 AN0S (24 MESES)-------------------------
+---
+---------------------------PLANOS DE COMPARA PARA TODAS MOTOS CADASTRADAS EM 2 AN0S (24 MESES)------------------------------
 
 
 
@@ -197,8 +197,8 @@ Moto: YAMAHA SCOOTER NEO 125 UBS | Economia Mensal: 583.21 | Qntd. de Meses: 24
 
 
 
-
--------------------------PLANOS DE COMPARA PARA TODAS MOTOS CADASTRADAS EM 3 AN0S (36 MESES)-------------------------
+---
+---------------------------PLANOS DE COMPARA PARA TODAS MOTOS CADASTRADAS EM 3 AN0S (36 MESES)------------------------------
 
 
 
@@ -297,8 +297,8 @@ Moto: YAMAHA SCOOTER NEO 125 UBS | Economia Mensal: 388.81 | Qntd. de Meses: 36
 
 
 
-
--------------------------PLANOS DE COMPARA PARA TODAS MOTOS CADASTRADAS EM 4 AN0S (48 MESES)-------------------------
+---
+---------------------------PLANOS DE COMPARA PARA TODAS MOTOS CADASTRADAS EM 4 AN0S (48 MESES)------------------------------
 
 
 
@@ -397,8 +397,8 @@ Moto: YAMAHA SCOOTER NEO 125 UBS | Economia Mensal: 291.60 | Qntd. de Meses: 48
 
 
 
-
--------------------------PLANOS DE COMPARA PARA TODAS MOTOS CADASTRADAS EM 5 AN0S (60 MESES)-------------------------
+---
+---------------------------PLANOS DE COMPARA PARA TODAS MOTOS CADASTRADAS EM 5 AN0S (60 MESES)------------------------------
 
 
 
@@ -497,8 +497,8 @@ Moto: YAMAHA SCOOTER NEO 125 UBS | Economia Mensal: 233.28 | Qntd. de Meses: 60
 
 
 
-
--------------------------PLANOS DE COMPARA PARA TODAS MOTOS CADASTRADAS EM 6 AN0S (72 MESES)-------------------------
+---
+---------------------------PLANOS DE COMPARA PARA TODAS MOTOS CADASTRADAS EM 6 AN0S (72 MESES)------------------------------
 
 
 
@@ -597,8 +597,8 @@ Moto: YAMAHA SCOOTER NEO 125 UBS | Economia Mensal: 194.40 | Qntd. de Meses: 72
 
 
 
-
--------------------------PLANOS DE COMPARA PARA TODAS MOTOS CADASTRADAS EM 7 AN0S (84 MESES)-------------------------
+---
+---------------------------PLANOS DE COMPARA PARA TODAS MOTOS CADASTRADAS EM 7 AN0S (84 MESES)------------------------------
 
 
 
@@ -697,8 +697,8 @@ Moto: YAMAHA SCOOTER NEO 125 UBS | Economia Mensal: 166.63 | Qntd. de Meses: 84
 
 
 
-
--------------------------PLANOS DE COMPARA PARA TODAS MOTOS CADASTRADAS EM 8 AN0S (96 MESES)-------------------------
+---
+---------------------------PLANOS DE COMPARA PARA TODAS MOTOS CADASTRADAS EM 8 AN0S (96 MESES)------------------------------
 
 
 
@@ -797,8 +797,8 @@ Moto: YAMAHA SCOOTER NEO 125 UBS | Economia Mensal: 145.80 | Qntd. de Meses: 96
 
 
 
-
--------------------------PLANOS DE COMPARA PARA TODAS MOTOS CADASTRADAS EM 9 AN0S (108 MESES)-------------------------
+---
+---------------------------PLANOS DE COMPARA PARA TODAS MOTOS CADASTRADAS EM 9 AN0S (108 MESES)------------------------------
 
 
 
@@ -897,8 +897,8 @@ Moto: YAMAHA SCOOTER NEO 125 UBS | Economia Mensal: 129.60 | Qntd. de Meses: 108
 
 
 
-
--------------------------PLANOS DE COMPARA PARA TODAS MOTOS CADASTRADAS EM 10 AN0S (120 MESES)-------------------------
+---
+---------------------------PLANOS DE COMPARA PARA TODAS MOTOS CADASTRADAS EM 10 AN0S (120 MESES)------------------------------
 
 
 
