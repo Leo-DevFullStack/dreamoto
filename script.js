@@ -87,6 +87,6 @@ function planejarCompra(id) {
             }
 
             const meses = Math.ceil(moto.preco / economiaMensal);
-            alert(`Você precisará de ${meses} meses para comprar a ${moto.marca} ${moto.modelo} economizando R$ ${economiaMensal.toFixed(2)} por mês.`);
+            alert(`Você precisará de ${meses} meses para comprar a ${moto.marca} ${moto.modelo} guardando R$ ${economiaMensal.toFixed(2)} por mês.`);
         });
 }
