@@ -14,6 +14,7 @@ int main() {
         printf("6 - Excluir Todas Motos\n");
         printf("7 - Planejar compra\n");
         printf("8 - Visualizar planos\n");
+        printf("9 - Pesquisar Planos\n");
         printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
         getchar();
@@ -69,6 +70,9 @@ int main() {
             }
             case 8:
                 visualizarPlanos();
+                break;
+            case 9:
+                pesquisarPlanosSalvos();
                 break;
             case 0:
                 printf("Saindo do programa...\n");
