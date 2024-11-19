@@ -453,4 +453,39 @@ void planejarCompraTodasMotos() {
     pausar();
 }
 
+void pesquisarPlanosSalvos() {
+    limparTela();
+    printf("-------- Pesquisar Planos --------\n");
+
+    FILE *arquivoPlanos = fopen("planos.txt", "r");
+    if (arquivoPlanos == NULL) {
+        printf("Nenhum plano registrado.\n");
+        pausar();
+        return;
+    }
+
+    char busca[TAMANHO_STRING];
+    printf("Digite dados da moto para pesquisar em planos\n(Ex: Marca, Tipo, Modelo, etc...):\n");
+    fgets(busca, TAMANHO_STRING, stdin);
+    busca[strcspn(busca, "\n")] = '\0';
+
+    char linha[300];
+    int encontrou = 0;
+
+    while (fgets(linha, sizeof(linha), arquivoPlanos)) {
+        if (strstr(linha, busca)) {
+            printf("%s", linha);
+            encontrou = 1;
+        }
+    }
+
+    fclose(arquivoPlanos);
+
+    if (!encontrou) {
+        printf("\nNenhum plano encontrado com o criterio informado\n\nDigite um criterio novamente ou aperte enter para voltar ao menu\n");
+    }
+
+    pausar();
+}
+
 #endif
