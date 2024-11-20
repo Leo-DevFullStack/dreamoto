@@ -28,6 +28,7 @@ void limparTela() {
 void pausar() {
     printf("\nPressione Enter para continuar...");
     getchar();
+    limparTela();
 }
 
 void salvarMotos() {
@@ -371,6 +372,12 @@ void planejarCompra() {
     scanf("%f", &economiaMensal);
     getchar();
 
+    if (economiaMensal <= 0) {
+        printf("Voce deve guardar por mes um valor maior que zero.\n");
+        pausar();
+        return;
+    }
+    
     int meses = (int)(motoEscolhida->preco / economiaMensal);
     printf("Voce deve guardar %.2f por %d meses para comprar a %s %s %s\n", economiaMensal, meses, motoEscolhida->marca, motoEscolhida->tipo, motoEscolhida->modelo);
 
