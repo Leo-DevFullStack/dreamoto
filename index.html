@@ -3,33 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <title>DREAMOTO</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header>DREAMOTO - Planejamento de Motos</header>
+    <header>DREAMOTO - Planejamento de Compra para a Moto dos seus Sonhos</header>
     <div class="container">
-        <h2>Cadastrar Moto</h2>
-        <form id="formMoto">
-            <label>ID</label>
-            <input type="number" id="id" required>
-            <label>Marca</label>
-            <input type="text" id="marca" required>
-            <label>Tipo</label>
-            <input type="text" id="tipo" required>
-            <label>Modelo</label>
-            <input type="text" id="modelo" required>
-            <label>Ano</label>
-            <input type="number" id="ano" required>
-            <label>Cor</label>
-            <input type="text" id="cor" required>
-            <label>Preço</label>
-            <input type="number" step="0.01" id="preco" required>
-            <button type="submit">Salvar Moto</button>
-        </form>
+        <div class="cadastro">
+            <h2>Cadastrar Moto</h2>
+            <form id="formMoto">
+                <label>ID</label>
+                <input type="number" id="id" required required placeholder="Digite um nº inteiro para ser o código da moto">
+                <label>Marca</label>
+                <input type="text" id="marca" required required required placeholder="Digite a marca da moto">
+                
+                <label for="tipo">Escolha o tipo de moto</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="TIPO">Escolha um tipo de pilotagem</option>
+                    <option value="URBANA">URBANA</option>
+                    <option value="SCOOTER">SCOOTER</option>
+                    <option value="NAKED">NAKED</option>
+                    <option value="Esportiva">ESPORTIVA</option>
+                    <option value="Big Trail">BIG TRAIL</option>
+                    <option value="OFF ROAD">OFF ROAD</option>
+                    <option value="Custom">CUSTOM</option>
+                    <option value="ELÉTRICA">ELÉTRICA</option>
+                </select>
 
-        <h2>Lista de Motos</h2>
+                <label>Modelo</label>
+                <input type="text" id="modelo" required required placeholder="Digite o modelo da moto">
+                <label>Ano</label>
+                <input type="number" id="ano" required required placeholder="yyyy">
+                <label>Cor</label>
+                <input type="text" id="cor" required required placeholder="Digite a cor da moto">
+                <label>Preço</label>
+                <input type="number" step="0.01" id="preco" required required placeholder="Após digitar um valor será adicionado '.00' centavos">
+                <button type="submit">Salvar Moto</button>
+            </form>
+        </div>
+
         <table id="tabelaMotos">
+            <div class="titleBar">
+                <h2>Lista de Motos</h2>
+                <div class="searchHeader">
+                    <button id="searchIcon">&#128269;</button>
+                    <input type="text" id="searchBar" placeholder="Digite para pesquisar...(PRESS TAB TO ACTIVE UPPERCASE)" class="hidden">
+                </div>
+            </div>
             <thead>
                 <tr>
                     <th>ID</th>
