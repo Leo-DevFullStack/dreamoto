@@ -1,3 +1,4 @@
+/* style.css */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
@@ -9,7 +10,7 @@ body {
 header {
     background: #ff5733;
     color: white;
-    padding: 1rem 0;
+    padding: 1rem;
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
@@ -20,24 +21,80 @@ header {
     max-width: 800px;
     margin: 0 auto;
 }
+.container > .cadastro {
+    padding: 10px;
+    border: 2px solid #ff7657;
+    border-radius: 10px;
+    box-shadow: 4px -4px 30px 1px #ff5733;
+}
+
+.titleBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -2rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    transition: opacity 0.3s ease;
+}
+
+.searchHeader {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+#searchIcon {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+#searchBar {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    transition: all 0.3s ease;
+}
+
+#searchBar.show {
+    opacity: 1;
+    visibility: visible;
+    width: 650px;
+}
 
 form {
     display: grid;
     gap: 1rem;
 }
+
 label {
     font-weight: bold;
 }
+
 input, select, button {
     padding: 0.5rem;
     font-size: 1rem;
 }
+
 button {
+    margin: 1px;
     background: #ff5733;
     color: white;
     border: none;
     cursor: pointer;
 }
+
 button:hover {
     background: #e04e2a;
 }
@@ -48,16 +105,19 @@ table {
     border-collapse: collapse;
     margin-top: 2rem;
 }
+
 th, td {
     border: 1px solid #ddd;
     padding: 0.8rem;
     text-align: left;
     overflow: hidden;
 }
+
 th {
     background: #ff5733;
     color: white;
 }
+
 tr:nth-child(even) {
     background: #f9f9f9;
 }
