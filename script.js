@@ -1,8 +1,31 @@
+// script.js
+
 const SHEETDB_URL = "https://sheetdb.io/api/v1/85elowbdmjk2x";
 
 const form = document.getElementById("formMoto");
 const tabelaMotos = document.getElementById("tabelaMotos").querySelector("tbody");
+const searchIcon = document.getElementById("searchIcon");
+const searchBar = document.getElementById("searchBar");
+const tituloTabela = document.querySelector(".titleBar h2");
 
+// Evento para alternar barra de pesquisa
+searchIcon.addEventListener("click", () => {
+    searchBar.classList.toggle("show");
+    tituloTabela.style.opacity = searchBar.classList.contains("show") ? "0" : "1";
+    searchBar.focus();
+});
+
+// Evento para busca dinâmica
+searchBar.addEventListener("input", () => {
+    const termo = searchBar.value.toLowerCase();
+    const linhas = tabelaMotos.querySelectorAll("tr");
+    linhas.forEach((linha) => {
+        const textoLinha = linha.innerText.toLowerCase();
+        linha.style.display = textoLinha.includes(termo) ? "" : "none";
+    });
+});
+
+// Carregar motos ao iniciar a página
 document.addEventListener("DOMContentLoaded", () => {
     carregarDoSheetDB();
 });
@@ -23,12 +46,12 @@ form.addEventListener("submit", (e) => {
     form.reset();
 });
 
+// Função para carregar dados do SheetDB
 function carregarDoSheetDB() {
     fetch(SHEETDB_URL)
         .then((response) => response.json())
         .then((dados) => {
             tabelaMotos.innerHTML = "";
-
             dados.forEach((moto) => {
                 const row = document.createElement("tr");
                 row.innerHTML = `
@@ -41,16 +64,16 @@ function carregarDoSheetDB() {
                     <td>R$ ${parseFloat(moto.preco).toFixed(2)}</td>
                     <td>
                         <button onclick="planejarCompra('${moto.id}')">Planejar</button>
+                        <button onclick="excluirMoto('${moto.id}')">Excluir</button>
                     </td>
                 `;
                 tabelaMotos.appendChild(row);
             });
         })
-        .catch((error) => {
-            console.error("Erro ao carregar dados do SheetDB:", error);
-        });
+        .catch((error) => console.error("Erro ao carregar dados:", error));
 }
 
+// Função para cadastrar nova moto
 function cadastrarMoto(moto) {
     fetch(SHEETDB_URL, {
         method: "POST",
@@ -70,6 +93,23 @@ function cadastrarMoto(moto) {
         });
 }
 
+// Função para excluir moto
+function excluirMoto(id) {
+    fetch(`${SHEETDB_URL}/id/${id}`, {
+        method: "DELETE",
+    })
+        .then((response) => {
+            if (response.ok) {
+                alert("Moto excluída com sucesso!");
+                carregarDoSheetDB();
+            } else {
+                alert("Erro ao excluir moto.");
+            }
+        })
+        .catch((error) => console.error("Erro ao excluir:", error));
+}
+
+// Função para planejar compra
 function planejarCompra(id) {
     fetch(SHEETDB_URL)
         .then((response) => response.json())
@@ -87,6 +127,6 @@ function planejarCompra(id) {
             }
 
             const meses = Math.ceil(moto.preco / economiaMensal);
-            alert(`Você precisará de ${meses} meses para comprar a ${moto.marca} ${moto.modelo} guardando R$ ${economiaMensal.toFixed(2)} por mês.`);
+            alert(`Você precisará de ${meses} meses para comprar a ${moto.marca} ${moto.modelo}.`);
         });
 }
