@@ -1,10 +1,19 @@
 /* style.css */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     color: #333;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 header {
@@ -16,16 +25,17 @@ header {
     font-weight: bold;
 }
 
+/* Responsividade para tamanhos pequenos */
 .container {
     padding: 2rem;
-    max-width: 800px;
+    max-width: 90%;
     margin: 0 auto;
 }
 .container > .cadastro {
-    padding: 10px;
-    border: 2px solid #ff7657;
-    border-radius: 10px;
-    box-shadow: 4px -4px 30px 1px #ff5733;
+    padding: 1rem;
+    border: 0.2em solid #ff7657;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 2rem 0.5rem #ff5733;
 }
 
 .titleBar {
@@ -70,7 +80,7 @@ h2 {
 #searchBar.show {
     opacity: 1;
     visibility: visible;
-    width: 650px;
+    width: 15rem;
 }
 
 form {
@@ -88,7 +98,7 @@ input, select, button {
 }
 
 button {
-    margin: 1px;
+    margin: 0.5rem;
     background: #ff5733;
     color: white;
     border: none;
@@ -121,3 +131,4 @@ th {
 tr:nth-child(even) {
     background: #f9f9f9;
 }
+
