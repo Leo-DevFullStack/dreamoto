@@ -132,6 +132,28 @@ tr:nth-child(even) {
     background: #f9f9f9;
 }
 
+/*resposividade do website*/
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+
+    form {
+        gap: 0.5rem;
+    }
+
+    input, select, button {
+        font-size: 0.9rem;
+        padding: 0.4rem;
+    }
+
+    header {
+        font-size: 1.25rem;
+    }
+}
+
+
 @media (max-width: 768px) {
     header {
         font-size: 1.5rem;
