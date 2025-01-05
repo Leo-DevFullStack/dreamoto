@@ -66,6 +66,7 @@ int main() {
                             break;
                     }
                 } while (subOpcao != 0);
+                limparTela();
                 break;
             }
             case 8:
